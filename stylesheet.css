@@ -18,14 +18,73 @@ body {
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    background: #112128;
+    background: #726143;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #474034;
+}
+
+.nav-link:hover{
+    color: #978a76;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #302820;
 }
 
 .container {
     position: relative;
     width: 1000px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -33,7 +92,7 @@ body {
 .container .card {
     position: relative;
     max-width: 450px;
-    background: #ffffff;
+    background: #dfd5c8;
     margin: 10px;
     padding: 15px;
     display: flex;
@@ -56,7 +115,67 @@ body {
 
 
 
-footer {
-    background-color: #bda06f;
-    
+
+@media (max-width: 991px) {
+    .container {
+        flex-direction: column;
+    }
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .container .card {
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+    .container .card .imgBx {
+        max-width: 100%;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+   
