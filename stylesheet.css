@@ -15,8 +15,6 @@ html {
 }
 
 body {
-    display: flex;
-    justify-content: center;
     min-height: 100vh;
     background: #726143;
 }
@@ -30,7 +28,7 @@ a {
 }
 
 .header{
-    border-bottom: 1px solid #E2E8F0;
+    border-bottom: 1px solid #302820;
 }
 
 .navbar {
@@ -58,6 +56,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 .nav-item {
@@ -81,33 +80,33 @@ a {
 }
 
 .container {
-    position: relative;
-    width: 1000px;
+    margin: auto;
+    max-width: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.container .card {
+.card {
     position: relative;
     max-width: 450px;
     background: #dfd5c8;
     margin: 10px;
     padding: 15px;
-    display: flex;
+    display: flex; 
 }
 
-.container .card .imgBx {
+.imgBx {
     max-width: 150px;
     flex: 0 0 150px;
 }
 
-.container .card .imgBx img {
+.imgBx img {
     max-width: 100%;
 }
 
-.container .card .content {
+.content {
     margin-left: 20px;
 }
 
