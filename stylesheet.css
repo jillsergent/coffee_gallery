@@ -86,6 +86,27 @@ a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    height: 100vh;
+}
+
+.table-container {
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50vh;
+}
+
+table {
+    font-size: 32px;
+    background-color: #a09583;
+
+}
+
+tr:nth-child(odd) {
+    background-color: #dfd5c8;
 }
 
 .card {
@@ -95,6 +116,7 @@ a {
     margin: 10px;
     padding: 15px;
     display: flex; 
+    border-radius: 15px;
 }
 
 .imgBx {
@@ -112,26 +134,36 @@ a {
 
 
 
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1500px;
+    }
 
+    .card {
+        max-width: 500px;
+    }
 
+}
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     .container {
         flex-direction: column;
+        height: auto;
     }
 }
 
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        height: auto;
     }
     
-    .container .card {
+    .card {
         flex-direction: column;
         max-width: 350px;
     }
 
-    .container .card .imgBx {
+    .imgBx {
         max-width: 100%;
     }
 
@@ -140,7 +172,7 @@ a {
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: #fff;
+        background-color: rgb(252, 244, 237);
         width: 100%;
         border-radius: 10px;
         text-align: center;
