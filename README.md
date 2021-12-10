@@ -5,10 +5,17 @@ My coffee is my daily ritual and it is sacred to me. I have my favorite shops to
 This project shows a number of HTML, CSS, and Javascript features. They are:
 
 Three media queries at small, medium, and large screens.
+
 Over 15 commits.
+
 Responsive nav bar to hamburger in mobile view.
+
 Hamburger mobile menu shown/hidden with Javascript.
+
 Hamburger to X css animation in mobile view.
+
 Responsive Flexbox layout.
+
 .nth-child styling on table to alternate row colors.
+
 Javascript multipy function to calculate your caffiene needs.
