@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="stylesheet.css">
+    
+    <title>Coffee Gallery</title>
+    
+
+</head>
+
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Coffee Gallery</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="table.html" class="nav-link">Varieties</a>
+                </li>
+                <li class="nav-item">
+                    <a href="calculate.html" class="nav-link">Calculate</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <script src="main.js"></script>
+    </header>
+
+    <div class="form-container">
+        <form class="form-style">
+            Number of Tasks: <input type="text" id="firstNumber" /><br>
+            <br>
+            Number of Hours to Complete: <input type="text" id="secondNumber" /><br>
+            <br>
+            <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        </form>
+    </div>
+    <div class="result">
+        <p>The number of coffees you'll need to survive the day: <br>
+            <span id = "result"></span>
+        </p>
+    </div>  
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
