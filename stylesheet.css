@@ -89,26 +89,6 @@ a {
     height: 100vh;
 }
 
-.table-container {
-    margin: auto;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 50vh;
-}
-
-table {
-    font-size: 32px;
-    background-color: #a09583;
-
-}
-
-tr:nth-child(odd) {
-    background-color: #dfd5c8;
-}
-
 .card {
     position: relative;
     max-width: 450px;
@@ -130,6 +110,72 @@ tr:nth-child(odd) {
 
 .content {
     margin-left: 20px;
+}
+
+table {
+    background-color: #a09583;
+    display: flex;
+    position: relative;
+}
+
+th, td {
+    font-size: 24px;
+}
+
+tr:nth-child(odd) {
+    background-color: #dfd5c8;
+}
+
+.table-container {
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 60vh;
+}
+
+.form-container {
+    margin: 100px auto 25px auto;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 30vh;
+    background-color: #dfd5c8;
+    border-radius: 15px;
+}
+
+.form-style {
+    font-size: 22px;
+}
+
+.result-container { 
+    margin: 55px auto 25px auto;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #dfd5c8;
+    border-radius: 15px;
+}
+
+p { 
+    font-size: 24px;
+}
+
+.result {
+    font-size: 22px;
+}
+
+.calcBtn {
+    background-color: #a09583;
+    font-size: 18px;
+    color: #dfd5c8;
+    border-style: solid;
 }
 
 
