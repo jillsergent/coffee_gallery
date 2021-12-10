@@ -163,7 +163,7 @@ tr:nth-child(odd) {
     border-radius: 15px;
 }
 
-p { 
+p.results { 
     font-size: 24px;
 }
 
@@ -188,7 +188,6 @@ p {
     .card {
         max-width: 500px;
     }
-
 }
 
 @media (max-width: 992px) {
