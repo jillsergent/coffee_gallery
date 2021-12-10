@@ -18,4 +18,4 @@ Responsive Flexbox layout.
 
 .nth-child styling on table to alternate row colors.
 
-Javascript multipy function to calculate your caffiene needs.
+Javascript multiply function to calculate your caffiene needs.
